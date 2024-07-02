@@ -1,0 +1,76 @@
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    z-index: 999;
+}
+header h1 {padding-left: 30px;}
+header h1 a {
+    display: block;
+    width: 120px;
+}
+header h1 a img {width: 100%;}
+.m-menu_btn {display: none;}
+.m-menu_btn a {display: block;}
+.m-menu_btn a img {width: 100%;}
+nav {
+    display: flex;
+    gap: 5rem;
+}
+nav a {
+    font-weight: 500;
+    padding: 5px;
+}
+nav a::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.3s;
+}
+nav a.white::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s;
+}
+nav a:hover::after {
+    width: 100%;
+}
+header .side_menu {
+    display: flex;
+    gap: 1rem;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    header {height: 56px;}
+    header h1 {padding-left: 16px;}
+    nav, .side_menu {display: none !important;}
+    .m-menu_btn {
+        display: block;
+        padding-right: 16px;
+    }
+    .sec01 .txt_bg_ani {
+        height: 100px;
+        background-size: cover;
+    }
+    .sec01 .images img:nth-child(2) {
+        min-width: 200px;
+    }
+}
+@media screen and (max-width: 648px) {
+    header h1 a {width: 80px;}
+    .m-menu_btn a {
+        display: block;
+        width: 24px;
+    }
+}

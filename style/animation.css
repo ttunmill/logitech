@@ -1,0 +1,63 @@
+/* sec01 imgs animation */
+@keyframes cloud {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+/* sce01 text_bg animation */
+@keyframes move_txt {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: -4343px;
+    }
+}
+
+/* sec02 text animation */
+@keyframes sec02_text {
+    0% {
+        letter-spacing: -0.1em;
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+/* sec02 animation */
+@keyframes key_cap1 {
+    0% {
+        transform: translateY(100px) rotate(-150deg);
+        opacity: 0;
+        
+    }
+    100% {
+        transform: translateY(0) rotate(-30deg);
+        opacity: 1;
+    }
+}
+@keyframes key_cap2 {
+    0% {
+        transform: translateY(100px) rotate(150deg);
+        opacity: 0;
+        
+    }
+    100% {
+        transform: translateY(0) rotate(50deg);
+        opacity: 1;
+    }
+}
+@keyframes keyboard_ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
