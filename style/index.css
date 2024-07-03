@@ -167,6 +167,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 5rem;
+    max-width: 1440px;
+    margin: 0 auto;
     height: 100%;
 }
 .sec04 h2 {

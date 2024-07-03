@@ -1,7 +1,7 @@
 // fullpage nav 반응
 const nav_logo = document.querySelector("h1 a img")
 const nav = document.querySelectorAll("header nav a")
-const m_menu = document.querySelector(".m-menu_btn a")
+
 const side_menu = document.querySelectorAll("header .side_menu li a img")
 const nav_after = nav[0].style;
 const nav_after1 = window.getComputedStyle(nav[0], "::after")
@@ -70,7 +70,6 @@ $("#fullPage_wrap").fullpage({
 
 // swiper
 const swiperSlides = document.querySelectorAll('.images_list');
-
 swiperSlides.forEach(function (element, index) {
     element.classList.add("swiper-" + index);
     let swiper = new Swiper(".swiper-" + index, {
@@ -102,6 +101,14 @@ window.onload = () => {
         sec04_li[1].addEventListener("mouseover", () => {
             sec04_img02()
         })
+    } else {
+        big_img.src = "./images/cork-office-building.jpg"
+        sec04_li[1].style.opacity = 1;
+        sec04_li[0].style.opacity = 1;
+        sec04_btn[0].style.opacity = 1;
+        sec04_btn[0].style.visibility = "visible";
+        sec04_btn[1].style.opacity = 1;
+        sec04_btn[1].style.visibility = "visible";
     }
 }
 
@@ -116,7 +123,15 @@ window.onresize = function(event){
         sec04_li[1].addEventListener("mouseover", () => {
             sec04_img02()
         })
-    } 
+    } else {
+        big_img.src = "./images/cork-office-building.webp"
+        sec04_li[1].style.opacity = 1;
+        sec04_li[0].style.opacity = 1;
+        sec04_btn[0].style.opacity = 1;
+        sec04_btn[0].style.visibility = "visible";
+        sec04_btn[1].style.opacity = 1;
+        sec04_btn[1].style.visibility = "visible";
+    }
 }
 
 function sec04_img01() {

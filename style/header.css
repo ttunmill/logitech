@@ -50,11 +50,58 @@ header .side_menu {
     gap: 1rem;
     padding-right: 30px;
 }
-
+/* header clone css */
+#header_clone_area {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100px;
+    transform: translateX(100%);
+    width: 100%;
+    transition: all 0.3s;
+}
+#header_clone_area header {
+    position: unset;
+    padding: 40px 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3rem;
+    width: 100%;
+    background-color: #fff;
+    height: 100vh;
+    z-index: 900;
+}
+#header_clone_area header h1 a {width: 120px;}
+#header_clone_area header h1,
+#header_clone_area header .side_menu {
+    padding: 0;
+}
+#header_clone_area header nav
+/* #header_clone_area header .side_menu */ {
+    display: flex !important;
+}
+#header_clone_area header nav {
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+}
+#header_clone_area header nav a {
+    padding: 0 0 10px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+#header_clone_area header nav a::after {display: none;}
+#header_clone_area header .m-menu_btn {display: none;}
+#header_clone_area .close_btn {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    z-index: 910;
+}
 @media screen and (max-width: 1024px) {
     header {height: 56px;}
     header h1 {padding-left: 16px;}
-    nav, .side_menu {display: none !important;}
+    header nav, .side_menu {display: none !important;}
     .m-menu_btn {
         display: block;
         padding-right: 16px;
@@ -66,6 +113,8 @@ header .side_menu {
     .sec01 .images img:nth-child(2) {
         min-width: 200px;
     }
+    /* header clone css */
+    #header_clone_area {display: flex;}
 }
 @media screen and (max-width: 648px) {
     header h1 a {width: 80px;}
