@@ -16,15 +16,16 @@ $("#fullPage_wrap").fullpage({
     
     onLeave : function(index, nextIndex, direction) {
         console.log(index, nextIndex, direction)
+        
         if(index == 1 || index == 3) {
             sec02_ani_on()
-            nav_color_white()
         } else {
             sec02_ani_off()
         }
-
-        if(index == 2 && direction == "up") {
+        if(index == 4 && direction == "down" || index == 5 && direction == "down" || index == 6 && direction == "up") {
             nav_color_black()
+        } else {
+            nav_color_white()
         }
 
         // 2번째부터 >>>>
@@ -46,27 +47,29 @@ $("#fullPage_wrap").fullpage({
         }
 
         // 네비게이션 두번째 페이지일때 부터
-        function nav_color_white() {
-            nav_logo.src = "./images/Logitech_logo _white.png";
-            m_menu.style.filter = "invert(1)"
-            for(var i of nav) {
-                i.style.color = "#fff";
-                i.classList.add("white")
-            }
-            for(var j of side_menu) {j.style.filter = "invert(1)"}
-        }
-        // 첫번째 페이지일때
-        function nav_color_black() {
-            nav_logo.src = "./images/Logitech_logo_black.png"
-            m_menu.style.filter = "invert(0)"
-            for(var i of nav) {
-                i.style.color = "#000"
-                i.classList.remove("white")
-            }
-            for(var j of side_menu) {j.style.filter = "invert(0)"}
-        }
+
     },
 })
+function nav_color_white() {
+    nav_logo.src = "./images/Logitech_logo_white.png";
+    m_menu.style.filter = "invert(1)"
+    for(var i of nav) {
+        i.style.color = "#fff";
+        i.classList.add("white")
+    }
+    for(var j of side_menu) {j.style.filter = "invert(1)"}
+}
+// 첫번째 페이지일때
+function nav_color_black() {
+    nav_logo.src = "./images/Logitech_logo_black.png"
+    m_menu.style.filter = "invert(0)"
+    for(var i of nav) {
+        i.style.color = "#000"
+        i.classList.remove("white")
+    }
+    for(var j of side_menu) {j.style.filter = "invert(0)"}
+}
+
 
 // swiper
 const swiperSlides = document.querySelectorAll('.images_list');
@@ -83,6 +86,7 @@ swiperSlides.forEach(function (element, index) {
     freemode: true
     });
 });
+
 
 // sec04 마우스 이벤트
 const big_img = document.querySelector(".sec04_contents .images img")

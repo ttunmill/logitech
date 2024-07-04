@@ -1,3 +1,6 @@
+/* main page 전용 헤더 */
+nav a {color: #fff;}
+.side_menu li a img {filter: invert(1);}
 /* ================ 공통 */
 .move_btn {
     display: flex;
@@ -22,48 +25,67 @@
 }
 /* ============ sec01 */
 .sec01 {
-    position: relative;
     overflow: hidden;
-    background : linear-gradient(180deg, #ececec, #fff);
+    position: relative;
+    background-color: #231F20;
 }
-/* sec01 텍스트들 */
-.sec01 .txt_bg_ani {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.sec01 .sec01_wrap {
+    height: 100%;
+}
+.sec01 video {
+    text-align: center;
     width: 100%;
-    height: 150px;
-    background: url("../images/sec01_move_text.png") repeat-x left top;
-    animation: move_txt 20s infinite linear;
+    height: 100%;
+    opacity: 0.4;
+}
+.sec01 .txt {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
     z-index: 20;
 }
-/* sec01 이미지들 */
-.sec01 .images img {
+/* .sec01 .txt::after {
+    content: "";
     position: absolute;
-    z-index: 10;
-    width: 50%;
-    max-width: 550px;
-}
-.sec01 .images img:first-child {
-    /* 위에 있는 이미지 */
-    top: -250px;
-    right: 20px;
-    transform: translateY(0) scale(1.2);
-    animation: cloud 3s ease-in-out infinite alternate;
-}
-.sec01 .images img:nth-child(2) {
-    /* 가운데 이미지 */
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1.5);
+    transform: translateY(-50%);
+    padding: 20px 0;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, #000, transparent);
+    z-index: -10;
 }
-.sec01 .images img:last-child {
-    /* 아래 있는 이미지 */
-    left: 0px;
-    bottom: -300px;
-    transform: translateY(0) scale(1.2);
-    animation: cloud 2s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite alternate;
+.sec01 .txt::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    padding: 20px 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #000, transparent);
+    z-index: -10;
+} */
+.sec01 .txt .image {
+    width: 200px;
+    margin-bottom: 30px;
+}
+.sec01 .txt .image img {
+    display: inline-block;
+    width: 100%;
+}
+.sec01 .txt p {
+    display: flex;
+    flex-direction: column;
+    width: 516px;
+    color: #fff;
+    font-size: 1.125rem;
+    line-height: 1.7;
+    text-align: left;
 }
 /* ============ sec02 */
 .sec02 {
@@ -83,7 +105,7 @@
 .sec02 .txt .top {
     display: flex;
     flex-direction: column;
-    font-size: 5rem;
+    font-size: 2.5rem;
     color: #fff;
 }
 .sec02 .txt .top span {
@@ -94,7 +116,8 @@
 .sec02 .txt .top span:last-child {animation-delay: 0.4s;}
 .sec02_text_impect {animation: sec02_text 0.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;}
 .sec02 .txt p {
-    font-size: 6.25rem;
+    font-size: 3.125rem;
+    font-weight: 600;
     color: #fff;
     opacity: 0;
     animation-delay: 0.8s;
@@ -229,64 +252,46 @@
 .sec04 .sec04_contents .sec04_g li:last-child {border-top: 1px solid #0BD4CD;}
 /* ============ sec05 */
 .sec05 {
-    overflow: hidden;
     position: relative;
-    background-color: #231F20;
+    overflow: hidden;
+    background : linear-gradient(180deg, #ececec, #fff);
 }
-.sec05 .sec05_wrap {
-    height: 100%;
-}
-.sec05 video {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-}
-.sec05 .txt {
+/* sec05 텍스트들 */
+.sec05 .txt_bg_ani {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
+    height: 150px;
+    background: url("../images/sec01_move_text.png") repeat-x left top;
+    animation: move_txt 20s infinite linear;
     z-index: 20;
 }
-.sec05 .txt::after {
-    content: "";
+/* sec05 이미지들 */
+.sec05 .images img {
     position: absolute;
+    z-index: 10;
+    width: 50%;
+    max-width: 550px;
+}
+.sec05 .images img:first-child {
+    /* 위에 있는 이미지 */
+    top: -250px;
+    right: 20px;
+    transform: translateY(0) scale(1.2);
+    animation: cloud 3s ease-in-out infinite alternate;
+}
+.sec05 .images img:nth-child(2) {
+    /* 가운데 이미지 */
     top: 50%;
-    transform: translateY(-50%);
-    padding: 20px 0;
-    display: block;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to left, #000, transparent);
-    z-index: -10;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
 }
-.sec05 .txt::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    padding: 20px 0;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(to right, #000, transparent);
-    z-index: -10;
-}
-.sec05 .txt .image {
-    width: 200px;
-    margin: 0 auto 20px;
-}
-.sec05 .txt .image img {
-    display: inline-block;
-    width: 100%;
-}
-.sec05 .txt p {
-    width: 50%;
-    margin: 0 auto;
-    color: #fff;
-    line-height: 1.7;
-    text-align: center;
+.sec05 .images img:last-child {
+    /* 아래 있는 이미지 */
+    left: 0px;
+    bottom: -300px;
+    transform: translateY(0) scale(1.2);
+    animation: cloud 2s cubic-bezier(0.55, 0.09, 0.68, 0.53) infinite alternate;
 }
