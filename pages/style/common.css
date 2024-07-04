@@ -1,1 +1,2 @@
 header {background-color: #fff;}
+#header_clone_area > header h1 a img {filter: invert(0);}
