@@ -5,7 +5,7 @@ const nav = document.querySelectorAll("header nav a")
 const side_menu = document.querySelectorAll("header .side_menu li a img")
 const nav_after = nav[0].style;
 
-
+for(var i of nav) {i.classList.add("white")}
 // fullpage
 $("#fullPage_wrap").fullpage({
     scrollBar : true, 
