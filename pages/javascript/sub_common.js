@@ -9,6 +9,7 @@ for(let i of ani) {
     })
 }
 
+// intro.html animation
 gsap.to(".circle1", {
     scrollTrigger : ".circle1",
     x : 0,

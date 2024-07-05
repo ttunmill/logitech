@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="../style/header.css">
     <link rel="stylesheet" href="../style/footer.css">
     <link rel="stylesheet" href="./style/support.css">
+    <link rel="stylesheet" href="./style/common.css">
     <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
     <!-- js -->
     <script src="../library/jquery-3.7.1.min.js"></script>
     <script src="../common/header.js" defer></script>
+    <script src="./javascript/sub_common.js" defer></script>
     <!-- plug in js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
@@ -24,7 +26,54 @@
         ?>
     </div>
     <main>
-
+        <section class="sec01">
+            <h1>
+                <span>Customer Support</span>
+                <strong>고객지원</strong>
+            </h1>
+            <div class="sec01_bg"></div>
+        </section>
+        <section class="sec02">
+            <div class="sec02_wrap">
+                <h2 class="ani">Logitech 고객지원에 오신 것을 환영합니다.</h2>
+                <form method="get" id="customer_search" class="ani">
+                    <div class="search_bar">
+                        <input type="text" placeholder="문제에 대해 알려주십시오.">
+                        <button type="submit"><img src="./images/support/search.png" alt=""></button>
+                    </div>
+                </form>
+                <ul class="service_list">
+                    <li class="ani list1">
+                        <a href="#">
+                            <div class="image"><img src="./images/support/product.svg" alt=""></div>
+                            <h3>제품등록</h3>
+                            <p>필요 시 항상 빠르고 쉽게 도움과 지원 받기</p>
+                        </a>
+                    </li>
+                    <li class="ani list2">
+                        <a href="#">
+                            <div class="image"><img src="./images/support/download.svg" alt=""></div>
+                            <h3>다운로드</h3>
+                            <p>제품을 검색하여 최신 소프트웨어 및 다운로드 받기</p>
+                        </a>
+                    </li>
+                    <li class="ani list3">
+                        <a href="#">
+                            <div class="image"><img src="./images/support/as.svg" alt=""></div>
+                            <h3>A/S문의</h3>
+                            <p>제품에 대해 A/S지원받기</p>
+                        </a>
+                    </li>
+                    <li class="ani list4">
+                        <a href="#">
+                            <div class="image"><img src="./images/support/service.svg" alt=""></div>
+                            <h3>문의하기</h3>
+                            <p>제품관련 문의하기</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
     <div class="footer">
         <?

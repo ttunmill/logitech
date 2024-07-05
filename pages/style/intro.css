@@ -35,26 +35,6 @@ section:not(:first-child) {padding: 100px 0;}
     background-attachment: fixed;
     opacity: 0.7;
 }
-.sec01 h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column; 
-    color: #fff;
-    
-    z-index: 1;
-}
-.sec01 h1 strong {
-    margin: 10px 0;
-    font-size: 3.125rem;
-    font-weight: 700;
-}
-.sec01 h1 span {
-    font-size: 1.25rem;
-    font-weight: 300;
-}
 /* ============ sec02 */
 .sec02 .sec02_wrap {
     display: flex;
@@ -207,6 +187,8 @@ section:not(:first-child) {padding: 100px 0;}
 .sec05 .sec05_wrap .sec05_contents li .txt p {
     line-height: 1.7;
 }
+.sec05 .sec05_wrap .sec05_contents li:nth-child(2) {animation-delay: 0.3s;}
+.sec05 .sec05_wrap .sec05_contents li:nth-child(3) {animation-delay: 0.6s;}
 /* ============ 반응형 */
 @media screen and (max-width: 1440px) {
     section:not(:first-child) {padding: 100px 16px;}
@@ -218,12 +200,6 @@ section:not(:first-child) {padding: 100px 0;}
     }
     section div[class $= wrap] {
         width: 100%;
-    }
-    /* =========== sec01 */
-    .sec01 h1 span {font-size: 1.125rem;}
-    .sec01 h1 strong {
-        text-align: center;
-        font-size: 2.5rem;
     }
     /* =========== sec02 */
     .sec02 {padding: 100px 16px !important;}
@@ -263,19 +239,13 @@ section:not(:first-child) {padding: 100px 0;}
     .sec05 .sec05_wrap .sec05_contents li {
         width: 100%;
     }
-
+    .sec05 .sec05_wrap .sec05_contents li:nth-child(2) {animation-delay: 0.1s;}
+    .sec05 .sec05_wrap .sec05_contents li:nth-child(3) {animation-delay: 0.1s;}
 }
 @media screen and (max-width: 648px) {
     /* ============ 공통 */
     section div[class *= wrap] h2 span {font-size: 1rem}
     section div[class *= wrap] h2 strong {font-size: 1.25rem;}
-    /* ============ sec01 */
-    .sec01 .sec01_bg {height: 300px;}
-    .sec01 h1 span {font-size: 1rem;}
-    .sec01 h1 strong {
-        text-align: center;
-        font-size: 1.875rem;
-    }
     /* ============ sec02 */
     .sec02 .sec02_wrap h2 {font-size: 1.25rem;}
     .sec02 .sec02_wrap h2::after {
@@ -302,18 +272,4 @@ section:not(:first-child) {padding: 100px 0;}
     .sec05 .sec05_wrap > .txt p {font-size: 0.875rem;}
     .sec05 .sec05_wrap .sec05_contents li .txt h3 {font-size: 1rem;}
     .sec05 .sec05_wrap .sec05_contents li .txt p {font-size: 0.875rem;}
-}   
-
-/* ============ scrolltriger 전용 애니메이션 */
-.ani {opacity: 0;}
-.move_ani {animation: move 1s 0.1s both;}
-@keyframes move {
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
 }

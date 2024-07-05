@@ -4,7 +4,7 @@ const nav = document.querySelectorAll("header nav a")
 
 const side_menu = document.querySelectorAll("header .side_menu li a img")
 const nav_after = nav[0].style;
-const nav_after1 = window.getComputedStyle(nav[0], "::after")
+
 
 // fullpage
 $("#fullPage_wrap").fullpage({
@@ -16,7 +16,6 @@ $("#fullPage_wrap").fullpage({
     
     onLeave : function(index, nextIndex, direction) {
         console.log(index, nextIndex, direction)
-        
         if(index == 1 || index == 3) {
             sec02_ani_on()
         } else {
@@ -28,7 +27,8 @@ $("#fullPage_wrap").fullpage({
             nav_color_white()
         }
 
-        // 2번째부터 >>>>
+        // 애니메이션 리로드 하기위해 작성
+        // 2번째 페이지 애니메이션 재생
         function sec02_ani_on() {
             $(".sec02 .txt span").addClass("sec02_text_impect")
             $(".sec02 .txt p").addClass("sec02_text_impect")
@@ -37,7 +37,7 @@ $("#fullPage_wrap").fullpage({
             $(".sec02 .images img:last-child").addClass("keyboard_ani")
         }
 
-        // 첫번째 페이지일때
+        // 2번째 페이지 애니메이션 제거
         function sec02_ani_off() {
             $(".sec02 .txt span").removeClass("sec02_text_impect")
             $(".sec02 .txt p").removeClass("sec02_text_impect")
@@ -45,24 +45,23 @@ $("#fullPage_wrap").fullpage({
             $(".sec02 .images img:nth-child(2)").removeClass("key_cap_ani02")
             $(".sec02 .images img:last-child").removeClass("keyboard_ani")
         }
-
-        // 네비게이션 두번째 페이지일때 부터
-
     },
 })
+
+// 네비게이션 로고 및 텍스트 white로 변환
 function nav_color_white() {
     nav_logo.src = "./images/Logitech_logo_white.png";
-    m_menu.style.filter = "invert(1)"
+    m_menu.style.filter = "invert(0)"
     for(var i of nav) {
         i.style.color = "#fff";
         i.classList.add("white")
     }
     for(var j of side_menu) {j.style.filter = "invert(1)"}
 }
-// 첫번째 페이지일때
+// 네비게이션 로고 및 텍스트 black으로 변환
 function nav_color_black() {
     nav_logo.src = "./images/Logitech_logo_black.png"
-    m_menu.style.filter = "invert(0)"
+    m_menu.style.filter = "invert(1)"
     for(var i of nav) {
         i.style.color = "#000"
         i.classList.remove("white")

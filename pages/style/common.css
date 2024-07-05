@@ -1,2 +1,59 @@
+/* sub_page navigation 배경색 */
 header {background-color: #fff;}
 #header_clone_area > header h1 a img {filter: invert(0);}
+.m-menu_btn a img {filter: invert(0);}
+/* ============ scrolltriger 전용 애니메이션 */
+.ani {opacity: 0;}
+.move_ani {animation: move 1s 0.1s both;}
+@keyframes move {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+/* sec01 공통 */
+.sec01 h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column; 
+    color: #fff;
+    
+    z-index: 1;
+}
+.sec01 h1 strong {
+    margin: 10px 0;
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+.sec01 h1 span {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+main {padding-top: 80px;}
+@media screen and (max-width: 1100px) {
+    /* =========== sec01 */
+    .sec01 h1 span {font-size: 1.125rem;}
+    .sec01 h1 strong {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 1024px) {
+    main {padding-top: 56px;}
+}
+@media screen and (max-width: 648px) {
+    /* ============ sec01 */
+    .sec01 .sec01_bg {height: 300px;}
+    .sec01 h1 span {font-size: 1rem;}
+    .sec01 h1 strong {
+        text-align: center;
+        font-size: 1.875rem;
+    }
+}
