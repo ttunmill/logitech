@@ -77,9 +77,13 @@
 @media screen and (max-width: 648px) {
     /* ============ sec01 */
     .sec01 .swiper-container .swiper-wrapper .swiper-slide {height: 400px;}
-    .sec02_wrap .sec02_list li h3 {font-size: 0.875rem;}
     .sec01 .swiper-container .swiper-wrapper .swiper-slide .sec01_txt {left: 50%;}
+    .sec01 .swiper-container .swiper-wrapper .swiper-slide .sec01_txt h2 {
+        font-size: 1.875rem;
+    }
+    .sec01 .swiper-container .swiper-wrapper .swiper-slide .sec01_txt p {font-size: 1rem;}
     /* ============ sec02 */
+    .sec02_wrap .sec02_list li h3 {font-size: 0.875rem;}
     .sec02_wrap .sec02_list li .image {
         width: 60px;
         height: 60px;
