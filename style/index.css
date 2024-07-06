@@ -127,7 +127,6 @@ section div[class $= wrap] {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
 }
 .sec03 .sec03_wrap .sec03_contents .big_image {
     /* width: 100%; */

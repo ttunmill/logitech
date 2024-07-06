@@ -12,6 +12,7 @@
     /* ============ sec03 */
     .sec03 .sec03_wrap .sec03_contents {
         flex-direction: column;
+        gap: 1rem;
     }
     .sec03 .sec03_wrap .sec03_contents .item_list {
         justify-content: space-between;
