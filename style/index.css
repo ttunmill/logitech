@@ -340,6 +340,10 @@ section div[class $= wrap] {
     border-radius: 50%;
     margin-right: 40px;
     border: 1px solid #231F20;
+    transition: opacity 0.3s;
+}
+.sec06 .sec06_wrap .sec06_content .sec06_g .color_list li a:hover {
+    opacity: 0.6;
 }
 .sec06 .sec06_wrap .sec06_content .sec06_g .color_list li:last-child {margin: 0;}
 .sec06 .sec06_wrap .sec06_content .sec06_g .color_list li.white a {background-color: #F5F5F5;}
