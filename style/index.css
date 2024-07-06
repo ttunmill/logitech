@@ -306,12 +306,15 @@ section div[class $= wrap] {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
+    min-width: 500px;
     height: 520px;
     background-color: #f5f5f5;
     border-radius: 30px;
 }
-.sec06 .sec06_wrap .sec06_content .sec06_g .image img {width: 100%;}
+.sec06 .sec06_wrap .sec06_content .sec06_g .image img {
+    width: 100%;
+    max-width: 500px;
+}
 .sec06 .sec06_wrap .sec06_content .sec06_g .txt {
     display: flex;
     flex-direction: column;

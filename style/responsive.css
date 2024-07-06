@@ -64,6 +64,7 @@
     .sec06 .sec06_wrap .sec06_content .sec06_g .txt h3 {font-size: 1.875rem;}
     .sec06 .sec06_wrap .sec06_content .sec06_g .image {
         width: 100%;
+        min-width: unset;
         height: 300px;
         max-width: none;
     }
