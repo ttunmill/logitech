@@ -1,101 +1,152 @@
-@media screen and (max-width: 1024px) {
-    /* ============ sec01 */
-    .sec01 .txt {left: 40%;}
-    .sec01 .txt p {
-        width: 100%;
-        margin: 0 auto;
+/* 
+    제작 : 조현우
+    갱신일 : 2024.07.06
+*/
+@media screen and (max-width: 1440px) {
+    section div[class $= wrap]:not(.sec02_wrap) {
+        padding: 100px 16px;
     }
-    .sec01 video {
-        width: auto;
-    }
-    /* ============ sec02 */
-    .sec02 .txt {
-        justify-content: center;
-        gap: 5rem;
-    }
-    .sec02 .txt .top {
-        font-size: 1.875rem;
-    }
-    .sec02 .txt p {font-size: 2.5rem;}
-    .sec02 .images img:last-child {bottom: -10%;}
-    /* ============= sec03 */
-    .sec03 .txt h2 {
-        font-size: 2.5rem;
-    }
-    /* ============= sec04 */
-    .sec04 h2 span {padding: 0;}
-    .sec04 .sec04_wrap {
-        justify-content: center;
-        gap: 1rem;
-        padding: 0 16px;
-    }
-    .sec04 h2 {
-        margin: 0;
-        font-size: 2.5rem;
-    }
-    .sec04 .sec04_contents {gap: 1rem;}
-    .sec04 .sec04_contents .images {
-        height: auto;
-    }
-    .sec04 .sec04_contents {
+}
+
+@media screen and (max-width: 1170px) {
+    /* ============ sec03 */
+    .sec03 .sec03_wrap .sec03_contents {
         flex-direction: column;
     }
-    .sec04 .sec04_contents .sec04_g {width: 100%;}
-    .sec04 .sec04_contents .sec04_g li {padding: 10px 0;}
-    /* ============= sec05 */
-    .sec05 .txt_bg_ani {
-        height: 100px;
-        background-size: cover;
+    .sec03 .sec03_wrap .sec03_contents .item_list {
+        justify-content: space-between;
+        
     }
-    .sec05 .images img:first-child {top: -200px}
-    .sec05 .images img:nth-child(2) {min-width: 200px;}
-    .sec05 .images img:last-child {bottom: -200px;}
+    .sec03 .sec03_wrap .sec03_contents .item_list li {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    main {padding-top: 56px;}
+    section div[class $= wrap]:not(.sec02_wrap) {
+        padding: 50px 16px;
+    }
+    /* ============ sec02 */
+    .sec02_wrap .sec02_list li {
+        width: calc(100% / 3 - 1rem);
+    }
+    /* ============ sec03 */
+    /* ============ sec04 */
+    .sec04 .sec04_wrap .item_list {
+        flex-direction: column;
+    }
+    .sec04 .sec04_wrap .item_list a {
+        width: 100%;
+    }
+    .sec04 .sec04_wrap .item_list a .image {
+        width: 100%;
+        max-width: 250px;
+    }
+    /* ============ sec05 */
+    .sec05 {margin: 0;}
+    .sec05 .sec05_wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec05 .sec05_wrap .txt h3 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .sec05 .sec05_wrap .detail_btn {
+        justify-content: center;
+    }
+    /* ============ sec06 */
+    .sec06 {padding: 0;}
+    .sec06 .sec06_wrap .sec06_content .sec06_g {
+        flex-direction: column;
+    }
+    .sec06 .sec06_wrap .sec06_content .sec06_g .txt h3 {font-size: 1.875rem;}
+    .sec06 .sec06_wrap .sec06_content .sec06_g .image {
+        width: 100%;
+        height: 300px;
+        max-width: none;
+    }
+    .sec06 .sec06_wrap .sec06_content .sec06_g .image img {
+        max-width: 300px;
+    }
+    .sec06 .sec06_wrap .sec06_content .sec06_g:last-child {
+        flex-direction: column-reverse;
+    }
+    .sec06 .sec06_wrap .sec06_content .sec06_g .color_list {margin-bottom: 50px;}
 }
 @media screen and (max-width: 648px) {
     /* ============ sec01 */
-    .sec01 .txt .image {width: 120px;}
-    .sec01 .txt p {
-        font-size: 0.75rem;
-    }
+    .sec01 .swiper-container .swiper-wrapper .swiper-slide {height: 400px;}
+    .sec02_wrap .sec02_list li h3 {font-size: 0.875rem;}
+    .sec01 .swiper-container .swiper-wrapper .swiper-slide .sec01_txt {left: 50%;}
     /* ============ sec02 */
-    .sec02 .txt .top {font-size: 1.25rem;}
-    .sec02 .txt p {font-size: 1.25rem;}
-    .sec02 .images img:last-child {bottom: 5%;}
-    .sec02 .images img:first-child, .sec02 .images img:nth-child(2) {
+    .sec02_wrap .sec02_list li .image {
         width: 60px;
+        height: 60px;
+        background-size: 30px;
     }
-    /* ============= sec03 */
-    .sec03 .txt h2 {font-size: 1.25rem;}
-    .sec03 .txt p {font-size: 0.875rem;}
-    /* ============= sec04 */
-    .sec04 h2 span {padding: 0;}
-    .sec04 .sec04_wrap {
-        gap: 1rem;
-        padding: 0 16px;
+    .sec02_wrap .sec02_list li:nth-child(2) .image {
+        background-size: 60px;
     }
-    .sec04 h2 {
-        font-size: 1.25rem;
+    /* ============ sec03 */
+    .sec03 .sec03_wrap .txt h2 {font-size: 1.25rem;}
+    .sec03 .sec03_wrap .txt p {font-size: 1rem;}
+    .sec03 .sec03_wrap .sec03_contents .big_image {margin-bottom: 0px;}
+    .sec03 .sec03_wrap .sec03_contents .big_image img {
+        width: 100%;
+        height: auto;
     }
-    .sec04 .sec04_contents {gap: 1rem;}
-    .sec04 .sec04_contents {
-        flex-direction: column;
+    .sec03 .sec03_wrap .sec03_contents .item_list li {
+        width: 100%;
+        height: 200px;
     }
-    .sec04 .sec04_contents .sec04_g {width: 100%;}
-    .sec04 .sec04_contents .sec04_g li {padding: 10px 0;}
-    .sec04 .sec04_contents .sec04_g li .intro h3 span:first-child {font-size: 0.75rem;}
-    .sec04 .sec04_contents .sec04_g li .intro h3 span:last-child {font-size: 1.25rem;}
-    .sec04 .sec04_contents .sec04_g li .sec04_btn .move_btn {
-        font-size: 0.75rem;
-        padding: 3px 10px;
-        justify-content: center;
-        gap: 0.3rem;
+
+    .sec03 .sec03_wrap .sec03_contents .item_list li a h3 {font-size: 1rem;}
+    .sec03 .sec03_wrap .sec03_contents .item_list li a p {font-size: 0.875rem}
+    .sec03 .sec03_wrap .sec03_contents .item_list li:nth-child(1) a .image {
+        width: 250px;
+        bottom: -40px;
+        right: -50px;
     }
-    /* ============= sec05 */
-    .sec05 .txt_bg_ani {
-        height: 70px;
+    .sec03 .sec03_wrap .sec03_contents .item_list li:nth-child(2) a .image {
+        width: 150px;
+        bottom: 0;
+        right: -20px;
     }
-    .sec05 .images img:first-child {top: -10%}
-    .sec05 .images img:nth-child(2) {min-width: 200px;}
-    .sec05 .images img:last-child {bottom: -10%;}
+    /* .sec03 .sec03_wrap .sec03_contents .item_list li:nth-child(3) a .image {
+        bottom: -0px;
+        left: -50px;
+        } */
+        .sec03 .sec03_wrap .sec03_contents .item_list li:nth-child(3) a .image {
+        left: unset;
+        width: 175px;
+        right: -40px;
+        bottom: -30px;
+        transform: rotate(315deg);
+    }
+    .sec03 .sec03_wrap .sec03_contents .item_list li:nth-child(4) a .image {
+        width: 150px;
+        bottom: 0;
+        right: -20px;
+    }
+    /* ============ sec04 */
+    .sec04 .sec04_wrap > .txt h2 {font-size: 1.25rem;}
+    .sec04 .sec04_wrap > .txt p {font-size: 1rem;}
+    .sec04 .sec04_wrap .item_list a {padding: 20px;}
+    .sec04 .sec04_wrap .item_list a .image {max-width: 150px;}
+    .sec04 .sec04_wrap .item_list a h3 {font-size: 1rem;}
+    .sec04 .sec04_wrap .item_list a p {font-size: 0.875rem;}
+    /* ============ sec05 */
+    .sec05 .sec05_wrap .image {height: auto;}
+    .sec05 .sec05_wrap .image img {max-height: 300px;}
+    .sec05 .sec05_wrap .txt h3 span {font-size: 1rem;}
+    .sec05 .sec05_wrap .txt h3 strong {font-size: 1.25rem;}
+    /* ============ sec06 */
+    .sec06 .sec06_wrap .sec06_content .sec06_g .image {height: 200px;}
+    .sec06 .sec06_wrap .sec06_content .sec06_g .image img {max-width: 200px;}
+    .sec06 .sec06_wrap .sec06_content .sec06_g .txt h3 {font-size: 1.25rem;}
+    .sec06 .sec06_wrap .sec06_content .sec06_g .txt p {font-size: 1rem;}
+}
+@media screen and (max-width: 460px) {
 
 }

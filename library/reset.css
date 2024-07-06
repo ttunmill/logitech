@@ -51,4 +51,5 @@ a {
 	font-family: "Noto Sans KR", sans-serif;
 	font-weight: normal;
 	font-style: normal;
+	box-sizing: border-box;
 }
