@@ -16,4 +16,5 @@
     <div id="header_clone_area">
         <a href="#" class="close_btn"><img src="../images/close_menu.svg" alt="메뉴닫기"></a>
     </div>
+    <div class="m_bg"></div>
 </header>
