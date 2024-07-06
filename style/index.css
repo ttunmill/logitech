@@ -333,13 +333,15 @@ section div[class $= wrap] {
     line-height: 1.5;
 }
 .sec06 .sec06_wrap .sec06_content .sec06_g .color_list {display: flex;}
-.sec06 .sec06_wrap .sec06_content .sec06_g .color_list li {
+.sec06 .sec06_wrap .sec06_content .sec06_g .color_list li a {
+    display: block;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin-right: 40px;
+    border: 1px solid #231F20;
 }
 .sec06 .sec06_wrap .sec06_content .sec06_g .color_list li:last-child {margin: 0;}
-.sec06 .sec06_wrap .sec06_content .sec06_g .color_list li.white {background-color: #F5F5F5;}
-.sec06 .sec06_wrap .sec06_content .sec06_g .color_list li.pink {background-color: #FFD9E5;}
-.sec06 .sec06_wrap .sec06_content .sec06_g .color_list li.black {background-color: #3F3F3F;}
+.sec06 .sec06_wrap .sec06_content .sec06_g .color_list li.white a {background-color: #F5F5F5;}
+.sec06 .sec06_wrap .sec06_content .sec06_g .color_list li.pink a {background-color: #FFD9E5;}
+.sec06 .sec06_wrap .sec06_content .sec06_g .color_list li.black a {background-color: #3F3F3F;}

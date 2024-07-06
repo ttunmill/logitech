@@ -119,11 +119,7 @@
         bottom: 0;
         right: -20px;
     }
-    /* .sec03 .sec03_wrap .sec03_contents .item_list li:nth-child(3) a .image {
-        bottom: -0px;
-        left: -50px;
-        } */
-        .sec03 .sec03_wrap .sec03_contents .item_list li:nth-child(3) a .image {
+    .sec03 .sec03_wrap .sec03_contents .item_list li:nth-child(3) a .image {
         left: unset;
         width: 175px;
         right: -40px;
