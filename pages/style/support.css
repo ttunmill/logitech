@@ -14,10 +14,10 @@
     opacity: 0.7;
 }
 /* ============ sec02 */
-.sec02 {padding: 100px 0;}
 .sec02 .sec02_wrap {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 100px 0;
 }
 .sec02 .sec02_wrap h2 {
     margin-bottom: 50px;
@@ -87,6 +87,8 @@
 .sec02 .sec02_wrap .service_list .list2 {animation-delay: 0.3s;}
 .sec02 .sec02_wrap .service_list .list3 {animation-delay: 0.6s;}
 .sec02 .sec02_wrap .service_list .list4 {animation-delay: 0.9s;}
+/* ============ sec03 */
+
 /* ============ 반응형 */
 @media screen and (max-width: 1440px) {
     .sec02 .sec02_wrap {
@@ -95,6 +97,7 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    /* ============ sec02 */
     .sec02 .sec02_wrap .service_list .list2, 
     .sec02 .sec02_wrap .service_list .list3, 
     .sec02 .sec02_wrap .service_list .list4 {animation-delay: 0.1s;}
@@ -108,7 +111,9 @@
     }
 }
 @media screen and (max-width: 648px) {
+    /* ============ sec01 */
     .sec01 .sec01_bg {height: 300px;}
+    /* ============ sec02 */
     .sec02 .sec02_wrap h2 {font-size: 1.25rem;}
     .sec02 .sec02_wrap #customer_search .search_bar input {
         font-size: 1rem;
