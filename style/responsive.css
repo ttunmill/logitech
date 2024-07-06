@@ -148,7 +148,7 @@
     .sec06 .sec06_wrap .sec06_content .sec06_g .image img {max-width: 200px;}
     .sec06 .sec06_wrap .sec06_content .sec06_g .txt h3 {font-size: 1.25rem;}
     .sec06 .sec06_wrap .sec06_content .sec06_g .txt p {font-size: 1rem;}
-    .sec06 .sec06_wrap .sec06_content .sec06_g .color_list li {
+    .sec06 .sec06_wrap .sec06_content .sec06_g .color_list li a {
         width: 30px;
         height: 30px;
         margin-right: 10px;
