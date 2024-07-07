@@ -79,6 +79,7 @@ header .side_menu {
 }
 #header_clone_area header h1 a {width: 120px;}
 #header_clone_area > header h1 a img {filter: invert(1);}
+#header_clone_area header h1 {width: 100%;}
 #header_clone_area header h1,
 #header_clone_area header .side_menu {
     padding: 0;
@@ -112,7 +113,7 @@ header .side_menu {
 #header_clone_area header .m-menu_btn {display: none;}
 #header_clone_area .close_btn {
     position: absolute;
-    top: 40px;
+    top: 50px;
     right: 20px;
     z-index: 910;
 }
