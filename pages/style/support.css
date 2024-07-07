@@ -88,10 +88,89 @@
 .sec02 .sec02_wrap .service_list .list3 {animation-delay: 0.6s;}
 .sec02 .sec02_wrap .service_list .list4 {animation-delay: 0.9s;}
 /* ============ sec03 */
-
+.sec03 {padding-bottom: 100px;}
+.sec03 .sec03_wrap {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.sec03 .sec03_wrap h2 {
+    margin-bottom: 50px;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+.sec03 .sec03_wrap .accordion {
+    width: 960px;
+    margin: 0 auto;
+}
+.sec03 .sec03_wrap .accordion .accordion_g {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.sec03 .sec03_wrap .accordion .accordion_g h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 16px;
+    border: 1px solid #000;
+    border-radius: 20px 20px 0 0;
+    background-color: #f5f5f5;
+    line-height: 1.3;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.sec03 .sec03_wrap .accordion .accordion_g h3 span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    transition: all 0.3s;
+}
+.sec03 .sec03_wrap .accordion .accordion_g h3 span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 30px;
+    width: 3px;
+    height: 16px;
+    background-color: #000;
+    transform: rotate(90deg);
+}
+.sec03 .sec03_wrap .accordion .accordion_g h3 span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 30px;
+    width: 3px;
+    height: 16px;
+    background-color: #000;
+}
+.sec03 .sec03_wrap .accordion .accordion_g .txt_area {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    border-top: 0;
+    transition: all 0.3s;
+}
+.sec03 .sec03_wrap .accordion .accordion_g .txt_area p {
+    padding: 50px 10px;
+    
+}
+.sec03 .sec03_wrap .accordion .accordion_g .txt_area p span {
+    display: block;
+    line-height: 1.7;
+}
 /* ============ 반응형 */
 @media screen and (max-width: 1440px) {
-    .sec02 .sec02_wrap {
+    .sec02 .sec02_wrap,
+    .sec03 .sec03_wrap {
         max-width: none;
         padding: 100px 16px;
     }
@@ -109,6 +188,9 @@
     .sec02 .sec02_wrap .service_list li {
         width: calc(100% / 2 - 2rem + 16px);
     }
+    /* ============ sec03 */
+    .sec03 .sec03_wrap .accordion {width: 100%;}
+    
 }
 @media screen and (max-width: 648px) {
     /* ============ sec01 */
@@ -130,4 +212,10 @@
     }
     .sec02 .sec02_wrap .service_list li h3 {font-size: 1.25rem;}
     .sec02 .sec02_wrap .service_list li p {font-size: 0.875rem;}
+    /* ============ sec03 */
+    .sec03 .sec03_wrap .accordion .accordion_g h3 {font-size: 1rem}
+    .sec03 .sec03_wrap .accordion .accordion_g .txt_area p {
+        padding: 20px 10px;
+        font-size: 0.875rem;
+    }
 }

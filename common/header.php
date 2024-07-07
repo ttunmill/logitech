@@ -2,6 +2,7 @@
     <h1><a href="../index.html"><img src="../images/Logitech_logo_black.png" alt="logitech"></a></h1>
     <nav>
         <a href="./intro.html">회사소개<span><img src="../images/Forward.png" alt=""></span></a>
+        <a href="./product.html">제품<span><img src="../images/Forward.png" alt="제품"></span></a>
         <a href="./g_hub.html">G Hub<span><img src="../images/Forward.png" alt=""></span></a>
         <a href="./support.html">지원<span><img src="../images/Forward.png" alt=""></span></a>
     </nav>

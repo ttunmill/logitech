@@ -6,7 +6,6 @@ header {
     align-items: center;
     height: 80px;
     z-index: 999;
-    border-bottom: 1px solid #ddd;
 }
 header h1 {padding-left: 30px;}
 header h1 a {
@@ -18,7 +17,7 @@ header h1 a img {width: 100%;}
 .m-menu_btn a {display: block;}
 .m-menu_btn a img {
     width: 100%;
-    /* filter: invert(1); */
+    filter: invert(1);
 }
 nav {
     display: flex;
