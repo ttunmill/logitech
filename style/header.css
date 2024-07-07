@@ -78,7 +78,7 @@ header .side_menu {
     z-index: 900;
 }
 #header_clone_area header h1 a {width: 120px;}
-/* #header_clone_area > header h1 a img {filter: invert(1);} */
+#header_clone_area > header h1 a img {filter: invert(1);}
 #header_clone_area header h1,
 #header_clone_area header .side_menu {
     padding: 0;

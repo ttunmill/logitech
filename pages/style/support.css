@@ -109,6 +109,7 @@
     flex-direction: column;
     margin-bottom: 50px;
 }
+.sec03 .sec03_wrap .accordion .accordion_g:last-child {margin: 0;}
 .sec03 .sec03_wrap .accordion .accordion_g h3 {
     display: flex;
     justify-content: space-between;
@@ -169,11 +170,11 @@
 }
 /* ============ 반응형 */
 @media screen and (max-width: 1440px) {
-    .sec02 .sec02_wrap,
-    .sec03 .sec03_wrap {
+    section div[class $= wrap] {
         max-width: none;
-        padding: 100px 16px;
+        padding-bottom: 100px 16px;
     }
+    .sec03 {padding: 0 16px 50px;}
 }
 @media screen and (max-width: 1024px) {
     /* ============ sec02 */
@@ -213,6 +214,7 @@
     .sec02 .sec02_wrap .service_list li h3 {font-size: 1.25rem;}
     .sec02 .sec02_wrap .service_list li p {font-size: 0.875rem;}
     /* ============ sec03 */
+    .sec03 .sec03_wrap h2 {font-size: 1.25rem;}
     .sec03 .sec03_wrap .accordion .accordion_g h3 {font-size: 1rem}
     .sec03 .sec03_wrap .accordion .accordion_g .txt_area p {
         padding: 20px 10px;
