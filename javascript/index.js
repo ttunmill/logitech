@@ -1,3 +1,7 @@
+/* 
+    제작 : 조현우
+    갱신일 : 2024.07.08
+*/
 // fullpage nav 반응
 const nav_logo = document.querySelector("h1 a img")
 const nav = document.querySelectorAll("header nav a")
@@ -21,11 +25,11 @@ $("#fullPage_wrap").fullpage({
         } else {
             sec02_ani_off()
         }
-        if(index == 4 && direction == "down" || index == 5 && direction == "down" || index == 6 && direction == "up") {
+        /* if(index == 4 && direction == "down" || index == 5 && direction == "down" || index == 6 && direction == "up") {
             nav_color_black()
         } else {
             nav_color_white()
-        }
+        } */
 
         // 애니메이션 리로드 하기위해 작성
         // 2번째 페이지 애니메이션 재생
@@ -34,7 +38,10 @@ $("#fullPage_wrap").fullpage({
             $(".sec02 .txt p").addClass("sec02_text_impect")
             $(".sec02 .images img:first-child").addClass("key_cap_ani01")
             $(".sec02 .images img:nth-child(2)").addClass("key_cap_ani02")
+            $(".sec02 .images img:nth-child(3)").addClass("key_cap_ani03")
             $(".sec02 .images img:last-child").addClass("keyboard_ani")
+            // $(".sec02 .images img:first-child").addClass("keycap_all_ani")
+            // $(".sec02 .images img:nth-child(2)").addClass("keycap_all_ani")
         }
 
         // 2번째 페이지 애니메이션 제거
@@ -43,13 +50,14 @@ $("#fullPage_wrap").fullpage({
             $(".sec02 .txt p").removeClass("sec02_text_impect")
             $(".sec02 .images img:first-child").removeClass("key_cap_ani01")
             $(".sec02 .images img:nth-child(2)").removeClass("key_cap_ani02")
+            $(".sec02 .images img:nth-child(3)").removeClass("key_cap_ani03")
             $(".sec02 .images img:last-child").removeClass("keyboard_ani")
         }
     },
 })
 
 // 네비게이션 로고 및 텍스트 white로 변환
-function nav_color_white() {
+/* function nav_color_white() {
     nav_logo.src = "./images/Logitech_logo_white.png";
     m_menu.style.filter = "invert(0)"
     for(var i of nav) {
@@ -57,9 +65,9 @@ function nav_color_white() {
         i.classList.add("white")
     }
     for(var j of side_menu) {j.style.filter = "invert(1)"}
-}
+} */
 // 네비게이션 로고 및 텍스트 black으로 변환
-function nav_color_black() {
+/* function nav_color_black() {
     nav_logo.src = "./images/Logitech_logo_black.png"
     m_menu.style.filter = "invert(1)"
     for(var i of nav) {
@@ -67,7 +75,7 @@ function nav_color_black() {
         i.classList.remove("white")
     }
     for(var j of side_menu) {j.style.filter = "invert(0)"}
-}
+} */
 
 
 // swiper
@@ -93,7 +101,7 @@ const sec04_li = document.querySelectorAll(".sec04_contents .sec04_g li")
 const sec04_btn = document.querySelectorAll(".sec04_contents .sec04_g li .sec04_btn")
 
 // 윈도우 사이즈 계산
-window.onload = () => {
+/* window.onload = () => {
     let screen = window.innerWidth;
     if(screen > 1024) {
         sec04_img01()
@@ -136,9 +144,9 @@ window.onresize = function(event){
         sec04_btn[1].style.visibility = "visible";
     }
 }
-
-function sec04_img01() {
-    big_img.src = "./images/cork-office-building.webp"
+ */
+/* function sec04_img01() {
+    big_img.src = "./images/cork-office-building.jpg"
     sec04_li[1].style.opacity = 0.6;
     sec04_li[0].style.opacity = 1;
     sec04_btn[0].style.opacity = 1;
@@ -148,11 +156,11 @@ function sec04_img01() {
 }
 
 function sec04_img02() {
-    big_img.src = "./images/consulting01.png"
+    big_img.src = "./images/bic-lift-design.webp"
     sec04_li[0].style.opacity = 0.6
     sec04_li[1].style.opacity = 1
     sec04_btn[1].style.opacity = 1;
     sec04_btn[1].style.visibility = "visible";
     sec04_btn[0].style.opacity = 0;
     sec04_btn[0].style.visibility = "hidden";
-}
+} */

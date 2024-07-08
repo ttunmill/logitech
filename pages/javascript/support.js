@@ -17,8 +17,9 @@ accordion_tit.forEach((title, index) => {
         // 클릭한 아코디언의 p 요소 가져오기
         const content = accordion_txt[index];
 
-        //h3옆 span rotate 초기화
+        //초기화
         for(var i of accordion_plus) {i.style.transform = "rotate(0)"}
+        for(var i of accordion_tit) {i.classList.remove("borderOn")}
 
         // 이미 열려 있는 아코디언인지 확인
         const isOpen = content.style.maxHeight;
@@ -34,10 +35,12 @@ accordion_tit.forEach((title, index) => {
 
         // 클릭한 아코디언 p 요소의 높이를 계산하여 열기 & style 추가
         content.style.maxHeight = content.scrollHeight + "px";
-        content.style.border = "1px solid #000"
+        content.style.border = "1px solid #ddd"
         content.style.borderRadius = "0 0 20px 20px"
         content.style.borderTop = 0
         accordion_plus[index].style.transform = "rotate(45deg)"
+
+        title.classList.add("borderOn")
     });
 });
 

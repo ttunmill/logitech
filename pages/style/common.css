@@ -1,5 +1,9 @@
 /* sub_page navigation 배경색 */
-header {background-color: #fff;}
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+main {padding-top: 80px;}
 #header_clone_area > header h1 a img {filter: invert(0);}
 .m-menu_btn a img {filter: invert(0);}
 /* ============ scrolltriger 전용 애니메이션 */
@@ -36,7 +40,17 @@ header {background-color: #fff;}
     font-size: 1.25rem;
     font-weight: 300;
 }
-main {padding-top: 80px;}
+nav a.on::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+#header_clone_area header .side_menu li a {
+    filter: invert(0);
+}
 @media screen and (max-width: 1100px) {
     /* =========== sec01 */
     .sec01 h1 span {font-size: 1.125rem;}

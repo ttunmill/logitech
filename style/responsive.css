@@ -1,23 +1,28 @@
 @media screen and (max-width: 1024px) {
     /* ============ sec01 */
-    .sec01 .txt {left: 40%;}
+    .sec01 .txt {
+        left: 60%;
+        width: 100%;
+    }
+    .sec01 .txt .image {width: 180px;}
     .sec01 .txt p {
         width: 100%;
         margin: 0 auto;
     }
+    .sec01 .txt p span:first-child {font-size: 1.5rem;}
+    .sec01 .txt p span:last-child {font-size: 1rem;}
     .sec01 video {
         width: auto;
     }
     /* ============ sec02 */
-    .sec02 .txt {
+    /* .sec02 .txt {
         justify-content: center;
         gap: 5rem;
-    }
-    .sec02 .txt .top {
-        font-size: 1.875rem;
-    }
-    .sec02 .txt p {font-size: 2.5rem;}
-    .sec02 .images img:last-child {bottom: -10%;}
+    } */
+    .sec02 .txt .top span:first-child {font-size: 1.3rem;}
+    .sec02 .txt .top span:last-child {font-size: 2.5rem;}
+    .sec02 .txt p {font-size: 4rem;}
+    .sec02 .images img:last-child {bottom: -5%;}
     /* ============= sec03 */
     .sec03 .txt h2 {
         font-size: 2.5rem;
@@ -48,21 +53,35 @@
         background-size: cover;
     }
     .sec05 .images img:first-child {top: -200px}
-    .sec05 .images img:nth-child(2) {min-width: 200px;}
+    .sec05 .images img:nth-child(2) {max-width: 150px;}
     .sec05 .images img:last-child {bottom: -200px;}
 }
 @media screen and (max-width: 648px) {
     /* ============ sec01 */
+    .sec01 .txt {
+        left: 50%;
+        width: 80%;
+    }
     .sec01 .txt .image {width: 120px;}
     .sec01 .txt p {
-        font-size: 0.75rem;
+        width: 100%;
+        margin: 0 auto;
     }
+    .sec01 .txt p span:first-child {font-size: 1rem;}
+    .sec01 .txt p span:last-child {font-size: 0.75rem;}
     /* ============ sec02 */
-    .sec02 .txt .top {font-size: 1.25rem;}
-    .sec02 .txt p {font-size: 1.25rem;}
-    .sec02 .images img:last-child {bottom: 5%;}
+    .sec02 .txt .top span:first-child {font-size: 0.875rem;}
+    .sec02 .txt .top span:last-child {font-size: 1.5rem;}
+    .sec02 .txt p {font-size: 2.25rem;}
+    .sec02 .images img:last-child {bottom: 20%;}
+    .sec02 .images img:first-child,
+    .sec02 .images img:nth-child(2),
+    .sec02 .images img:nth-child(3) {
+        width: 9%;
+    }
     .sec02 .images img:first-child, .sec02 .images img:nth-child(2) {
-        width: 60px;
+        max-width: 50px;
+        bottom: 100px;
     }
     /* ============= sec03 */
     .sec03 .txt h2 {font-size: 1.25rem;}
@@ -93,9 +112,10 @@
     /* ============= sec05 */
     .sec05 .txt_bg_ani {
         height: 70px;
+        animation-duration: 40s;
     }
     .sec05 .images img:first-child {top: -10%}
-    .sec05 .images img:nth-child(2) {min-width: 200px;}
+    .sec05 .images img:nth-child(2) {max-width: 125px;}
     .sec05 .images img:last-child {bottom: -10%;}
 
 }

@@ -41,13 +41,13 @@ section div[class $= wrap] {
     background-attachment: fixed;
 }
 .sec01 .swiper-container .swiper-wrapper .slide1 {
-    background-image: url("../images/product/pxfuel.jpg");
+    background-image: url("../images/product/banner-1.jpg");
     
 }
 .sec01 .swiper-container .swiper-wrapper .swiper-slide .sec01_txt {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 20%;
     transform: translate(-50%, -50%);
     color: #fff;
 }
@@ -375,6 +375,22 @@ section div[class $= wrap] {
     section div[class $= wrap]:not(.sec02_wrap) {
         padding: 50px 16px;
     }
+    /* ============ sec01 */
+    .sec01 .swiper-container .swiper-wrapper .swiper-slide .sec01_txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        top: 30%;
+        left: 50%;
+    }
+    .sec01 .swiper-container .swiper-wrapper .swiper-slide {
+        height: 700px;
+    }
+    .sec01 .swiper-container .swiper-wrapper .slide1 {
+        background-image: url("../images/product/sp_banner-1.jpg");
+    }
     /* ============ sec02 */
     .sec02_wrap .sec02_list li {
         width: calc(100% / 3 - 1rem);
@@ -426,8 +442,6 @@ section div[class $= wrap] {
 }
 @media screen and (max-width: 648px) {
     /* ============ sec01 */
-    .sec01 .swiper-container .swiper-wrapper .swiper-slide {height: 400px;}
-    .sec01 .swiper-container .swiper-wrapper .swiper-slide .sec01_txt {left: 50%;}
     .sec01 .swiper-container .swiper-wrapper .swiper-slide .sec01_txt h2 {
         font-size: 1.875rem;
     }

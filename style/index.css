@@ -8,14 +8,15 @@ nav a {color: #fff;}
     align-items: center;
     margin: 0 auto;
     padding: 5px 20px;
-    width: 80px;
+    width: 110px;
     font-weight: 500;
-    background-color: #0BD4CD;
+    background-color: #00ccff;
     border-radius: 30px;
     transition: background-color 0.3s;
 }
-.move_btn:hover {background-color: #1A9C98;}
+.move_btn:hover {background-color: #0BD4CD;}
 .move_btn span {
+    display: block;
     width: 28px;
     height: 28px;
     background-image: url("../images/btn_arrow.png");
@@ -41,7 +42,8 @@ nav a {color: #fff;}
 .sec01 .txt {
     position: absolute;
     top: 70%;
-    left: 30%;
+    left: 50%;
+    width: 70%;
     transform: translate(-50%, -50%);
     z-index: 20;
 }
@@ -81,11 +83,15 @@ nav a {color: #fff;}
 .sec01 .txt p {
     display: flex;
     flex-direction: column;
-    width: 516px;
+    width: 100%;
     color: #fff;
     font-size: 1.125rem;
     line-height: 1.7;
     text-align: left;
+}
+.sec01 .txt p span:first-child {
+    font-size: 1.875rem;
+    font-weight: 500;
 }
 /* ============ sec02 */
 .sec02 {
@@ -94,18 +100,20 @@ nav a {color: #fff;}
     background-color: #231F20;
 }
 .sec02 .txt {
-    position: relative;
-    text-align: center;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 1rem;
+    position: relative;
+    top: 20%;
+    text-align: center;
     height: 100%;
     z-index: 20;
 }
 .sec02 .txt .top {
     display: flex;
     flex-direction: column;
-    font-size: 2.5rem;
+    gap: 1rem;
     color: #fff;
 }
 .sec02 .txt .top span {
@@ -113,10 +121,18 @@ nav a {color: #fff;}
     line-height: 1.5;
     font-family: "Sofia Sans", sans-serif;
 }
-.sec02 .txt .top span:last-child {animation-delay: 0.4s;}
+.sec02 .txt .top span:first-child {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.sec02 .txt .top span:last-child {
+    font-size: 3.125rem;
+    font-weight: 400;
+    animation-delay: 0.4s;
+}
 .sec02_text_impect {animation: sec02_text 0.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;}
 .sec02 .txt p {
-    font-size: 3.125rem;
+    font-size: 5rem;
     font-weight: 600;
     color: #fff;
     opacity: 0;
@@ -127,32 +143,49 @@ nav a {color: #fff;}
     z-index: 10;
 }
 .sec02 .images img:first-child,
-.sec02 .images img:nth-child(2) {
-    width: 100px;
+.sec02 .images img:nth-child(2),
+.sec02 .images img:nth-child(3) {
+    width: 7%;
 }
 .sec02 .images img:first-child {
     opacity: 0;
     top: 120px;
     left: 8%;
     transform: rotate(-30deg);
-    
 }
 .sec02 .images img:nth-child(2) {
     opacity: 0;
-    bottom: 300px;
+    bottom: 450px;
     right: 8%;
     transform: rotate(50deg);
 }
+.sec02 .images img:nth-child(3) {
+    opacity: 0;
+    top: 100px;
+    right: 8%;
+}
 .sec02 .images img:last-child {
     opacity: 0;
-    width: 60%;
+    width: 80%;
+    max-width: 1100px;
     bottom: -250px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(1.2);
 }
-.key_cap_ani01 {animation: key_cap1 0.4s 0.8s ease-in-out both;}
-.key_cap_ani02 {animation: key_cap2 0.4s 0.8s ease-in-out both;}
+.key_cap_ani01 {
+    animation: key_cap1 0.4s 0.8s ease-in-out both, 
+    keycap_1_rotate 2s 0.8s ease-in-out infinite alternate;
+}
+.key_cap_ani02 {
+    animation: key_cap2 0.4s 0.8s ease-in-out both,
+    keycap_2_rotate 1s 0.8s ease-in-out infinite alternate;
+}
+.key_cap_ani03 {
+    animation: key_cap3 0.4s 0.8s ease-in-out both,
+    keycap_3_rotate 1.5s 0.8s ease-in-out infinite alternate;
+}
 .keyboard_ani {animation: keyboard_ani 0.4s 1.2s ease-in-out both;}
+/* .keycap_all_ani {animation: keycap_all 1s 0.8s linear infinite alternate;} */
 /* ============ sec03 */
 .sec03 {
     overflow: hidden;
@@ -190,7 +223,7 @@ nav a {color: #fff;}
     flex-direction: column;
     justify-content: center;
     gap: 5rem;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
     height: 100%;
 }
@@ -213,7 +246,8 @@ nav a {color: #fff;}
 }
 .sec04 .sec04_contents .images {
     width: calc(60% - 2rem);
-    height: 450px;
+    height: 100%;
+    /* max-height: 1137px; */
     overflow: hidden;
 }
 .sec04 .sec04_contents .images img {width: 100%;}
@@ -254,7 +288,7 @@ nav a {color: #fff;}
 .sec05 {
     position: relative;
     overflow: hidden;
-    background : linear-gradient(180deg, #ececec, #fff);
+    background : linear-gradient(180deg, #231F20, #1A1A1B);
 }
 /* sec05 텍스트들 */
 .sec05 .txt_bg_ani {
@@ -284,6 +318,8 @@ nav a {color: #fff;}
 }
 .sec05 .images img:nth-child(2) {
     /* 가운데 이미지 */
+    width: 100%;
+    max-width: 200px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.5);

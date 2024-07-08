@@ -14,7 +14,7 @@
         background-position: 0;
     }
     100% {
-        background-position: -4343px;
+        background-position: -4374px;
     }
 }
 
@@ -57,7 +57,45 @@
         opacity: 1;
     }
 }
+@keyframes key_cap3 {
+    0% {
+        transform: translateY(100px) rotate(150deg);
+        opacity: 0;
+        
+    }
+    100% {
+        transform: translateY(0) rotate(50deg);
+        opacity: 1;
+    }
+}
 @keyframes keyboard_ani {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@keyframes keycap_1_rotate {
+    0% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes keycap_2_rotate {
+    0% {
+        transform: rotate(50deg);
+    }
+    100% {
+        transform: rotate(65deg);
+    }
+}
+
+@keyframes keycap_3_rotate {
+    0% {
+        transform: rotate(70deg);
+    }
+    100% {
+        transform: rotate(80deg);
+    }
 }

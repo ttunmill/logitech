@@ -81,15 +81,17 @@ header .side_menu {
 #header_clone_area > header h1 a img {filter: invert(1);}
 #header_clone_area header h1 {width: 100%;}
 #header_clone_area header h1,
+#header_clone_area header nav,
 #header_clone_area header .side_menu {
-    padding: 0;
-}
-#header_clone_area header nav
-/* #header_clone_area header .side_menu */ {
     display: flex !important;
     align-items: flex-start;
     overflow: hidden;
 }
+#header_clone_area header .side_menu {
+    padding: 0;
+    gap: 2rem;
+}
+#header_clone_area header .side_menu > li > a {filter: invert(1);}
 #header_clone_area header nav {
     width: 100%;
     flex-direction: column;
@@ -130,9 +132,72 @@ header .side_menu {
     transition: all 0.3s;
     z-index: 100;
 }
+/* ============ side menu 검색창 */
+.search_box {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 20px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    width: 100%;
+    background-color: #f5f5f5;
+    transition: all 0.3s;
+}
+.search_box .txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.search_box .txt h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #000;
+}
+.search_box .txt .close_search {
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/close_menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.search_box #user_search_form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.search_box #user_search_form input[type = text] {
+    width: 100%;
+    padding: 10px 16px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+.search_box #user_search_form button[type = submit] {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background-color: unset;
+    background-image: url("../images/search.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+#header_clone_area header .search_box {
+    top: unset;
+    background-color: #ddd;
+}
+#header_clone_area header .search_box .txt {margin-bottom: 10px;}
+#header_clone_area header .search_box #user_search_form {gap: 0.5rem;}
 @media screen and (max-width: 1024px) {
     header {height: 56px;}
-    header h1 {padding-left: 16px;}
+    header > h1 {padding-left: 16px;}
+    #header_clone_area header h1 {padding: 0;}
     header nav, .side_menu {display: none !important;}
     .m_bg {display: block;}
     .m-menu_btn {
@@ -148,6 +213,12 @@ header .side_menu {
     }
     /* header clone css */
     #header_clone_area {display: flex;}
+    /* 검색창 */
+    .search_box {
+        padding: 15px;
+    }
+    .search_box .txt h3 {font-size: 1rem;}
+    .search_box #user_search_form input[type = text] {padding: 5px 16px;}
 }
 @media screen and (max-width: 648px) {
     header h1 a {width: 80px;}
