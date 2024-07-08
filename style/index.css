@@ -79,6 +79,7 @@ nav a {color: #fff;}
 .sec01 .txt .image img {
     display: inline-block;
     width: 100%;
+    filter: invert(1);
 }
 .sec01 .txt p {
     display: flex;
@@ -140,6 +141,7 @@ nav a {color: #fff;}
 }
 .sec02 .images img {
     position: absolute;
+    max-width: 80px;
     z-index: 10;
 }
 .sec02 .images img:first-child,
@@ -149,7 +151,7 @@ nav a {color: #fff;}
 }
 .sec02 .images img:first-child {
     opacity: 0;
-    top: 120px;
+    top: 300px;
     left: 8%;
     transform: rotate(-30deg);
 }
@@ -162,7 +164,13 @@ nav a {color: #fff;}
 .sec02 .images img:nth-child(3) {
     opacity: 0;
     top: 100px;
-    right: 8%;
+    right: 20%;
+}
+.sec02 .images img:nth-child(4) {
+    opacity: 0;
+    top: 100px;
+    left: 25%;
+    transform: scaleX(-1);
 }
 .sec02 .images img:last-child {
     opacity: 0;
@@ -183,6 +191,10 @@ nav a {color: #fff;}
 .key_cap_ani03 {
     animation: key_cap3 0.4s 0.8s ease-in-out both,
     keycap_3_rotate 1.5s 0.8s ease-in-out infinite alternate;
+}
+.key_cap_ani04 {
+    animation: key_cap4 0.4s 0.8s ease-in-out both,
+    keycap_4_rotate 1.5s 0.8s ease-in-out infinite alternate;
 }
 .keyboard_ani {animation: keyboard_ani 0.4s 1.2s ease-in-out both;}
 /* .keycap_all_ani {animation: keycap_all 1s 0.8s linear infinite alternate;} */

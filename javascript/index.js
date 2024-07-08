@@ -39,6 +39,7 @@ $("#fullPage_wrap").fullpage({
             $(".sec02 .images img:first-child").addClass("key_cap_ani01")
             $(".sec02 .images img:nth-child(2)").addClass("key_cap_ani02")
             $(".sec02 .images img:nth-child(3)").addClass("key_cap_ani03")
+            $(".sec02 .images img:nth-child(4)").addClass("key_cap_ani04")
             $(".sec02 .images img:last-child").addClass("keyboard_ani")
             // $(".sec02 .images img:first-child").addClass("keycap_all_ani")
             // $(".sec02 .images img:nth-child(2)").addClass("keycap_all_ani")
@@ -51,6 +52,7 @@ $("#fullPage_wrap").fullpage({
             $(".sec02 .images img:first-child").removeClass("key_cap_ani01")
             $(".sec02 .images img:nth-child(2)").removeClass("key_cap_ani02")
             $(".sec02 .images img:nth-child(3)").removeClass("key_cap_ani03")
+            $(".sec02 .images img:nth-child(4)").removeClass("key_cap_ani04")
             $(".sec02 .images img:last-child").removeClass("keyboard_ani")
         }
     },

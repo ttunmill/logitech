@@ -68,6 +68,18 @@
         opacity: 1;
     }
 }
+@keyframes key_cap4 {
+    0% {
+        transform: translateY(100px) rotate(150deg);
+        opacity: 0;
+        
+    }
+    100% {
+        transform: translateY(0) rotate(50deg);
+        opacity: 1;
+    }
+}
+
 @keyframes keyboard_ani {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -97,5 +109,14 @@
     }
     100% {
         transform: rotate(80deg);
+    }
+}
+
+@keyframes keycap_4_rotate {
+    0% {
+        transform: rotate(-60deg) scaleX(-1);
+    }
+    100% {
+        transform: rotate(-50deg) scaleX(-1);
     }
 }

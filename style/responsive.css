@@ -23,6 +23,7 @@
     .sec02 .txt .top span:last-child {font-size: 2.5rem;}
     .sec02 .txt p {font-size: 4rem;}
     .sec02 .images img:last-child {bottom: -5%;}
+    .sec02 .images img:nth-child(2) {bottom: 350px;}
     /* ============= sec03 */
     .sec03 .txt h2 {
         font-size: 2.5rem;
@@ -73,15 +74,19 @@
     .sec02 .txt .top span:first-child {font-size: 0.875rem;}
     .sec02 .txt .top span:last-child {font-size: 1.5rem;}
     .sec02 .txt p {font-size: 2.25rem;}
-    .sec02 .images img:last-child {bottom: 20%;}
+    .sec02 .images img:last-child {bottom: 10%;}
     .sec02 .images img:first-child,
     .sec02 .images img:nth-child(2),
-    .sec02 .images img:nth-child(3) {
+    .sec02 .images img:nth-child(3),
+    .sec02 .images img:nth-child(4) {
         width: 9%;
     }
-    .sec02 .images img:first-child, .sec02 .images img:nth-child(2) {
-        max-width: 50px;
-        bottom: 100px;
+    .sec02 .images img:first-child {
+        top: 400px;
+    }
+    .sec02 .images img:nth-child(2) {
+        right: 20%;
+        bottom: 420px;
     }
     /* ============= sec03 */
     .sec03 .txt h2 {font-size: 1.25rem;}
