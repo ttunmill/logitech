@@ -24,7 +24,7 @@
 * [`FTP 메인페이지`](http://ttunmill.dothome.co.kr/logitech/index.html)
 
 ---
-## 🔗서브페이지 (2개)
+## 🔗서브페이지 (3개)
 * [`서브페이지(회사소개)`](http://ttunmill.dothome.co.kr/logitech/pages/intro.html)
 * [`서브페이지(제품)`](http://ttunmill.dothome.co.kr/logitech/pages/product.html)
 * [`서브페이지(지원)`](http://ttunmill.dothome.co.kr/logitech/pages/support.html)
