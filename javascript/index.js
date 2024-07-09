@@ -1,6 +1,6 @@
 /* 
     제작 : 조현우
-    갱신일 : 2024.07.08
+    갱신일 : 2024.07.09
 */
 // fullpage nav 반응
 const nav_logo = document.querySelector("h1 a img")
@@ -87,12 +87,22 @@ swiperSlides.forEach(function (element, index) {
     let swiper = new Swiper(".swiper-" + index, {
     autoplay: {
             delay: 1,
-            desableOnInteraction: false,
+            disableOnInteraction: false,
     },
     speed: 5000,
     loop: true,
     slidesPerView: "3",
     freemode: true
+    });
+});
+
+// swiper 마우스 hover시 멈추게 하기
+$(".swiper-container").each(function(elem, target){
+    var swp = target.swiper;
+    $(this).hover(function() {
+        swp.autoplay.stop();
+    }, function() {
+        swp.autoplay.start();
     });
 });
 

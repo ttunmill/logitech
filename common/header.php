@@ -7,7 +7,19 @@
     </nav>
     <ul class="side_menu">
         <li><a href="#"><img src="../images/email.png" alt="email"></a></li>
-        <li><a href="#"><img src="../images/search.png" alt="search"></a></li>
+        <li>
+            <a href="#"><img src="../images/search.png" alt="search"></a>
+            <div class="search_box">
+                <div class="txt">
+                    <h3>검색하기</h3>
+                    <a href="#" class="close_search"></a>
+                </div>
+                <form method="get" id="user_search_form">
+                    <input type="text" name="" id="">
+                    <button type="submit"></button>
+                </form>
+            </div>
+        </li>
         <li><a href="#"><img src="../images/myProfile.png" alt="my profile"></a></li>
     </ul>
     <div class="m-menu_btn">
