@@ -16,18 +16,18 @@
 ---
 
 ## Figma 와이어프레임 & 프로토타입
-* [`figma 주소`](https://www.figma.com/design/TQ2dZRQrYzf7MjAp0DiGr9/logitech-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&t=dCjMtVrbruDb2aVB-1){: target="_blank"}
+* [`figma 주소`](https://www.figma.com/design/TQ2dZRQrYzf7MjAp0DiGr9/logitech-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0-1&t=dCjMtVrbruDb2aVB-1)
 
 ## 넷리파이 주소
-* [`넷리파이 메인페이지`](https://logitechproject.netlify.app/){: target="_blank"}
+* [`넷리파이 메인페이지`](https://logitechproject.netlify.app/)
 ## FTP 주소
-* [`FTP 메인페이지`](http://ttunmill.dothome.co.kr/logitech/index.html){: target="_blank"}
+* [`FTP 메인페이지`](http://ttunmill.dothome.co.kr/logitech/index.html)
 
 ---
 ## 🔗서브페이지 (3개)
-* [`서브페이지(회사소개)`](http://ttunmill.dothome.co.kr/logitech/pages/intro.html){: target="_blank"}
-* [`서브페이지(제품)`](http://ttunmill.dothome.co.kr/logitech/pages/product.html){: target="_blank"}
-* [`서브페이지(지원)`](http://ttunmill.dothome.co.kr/logitech/pages/support.html){: target="_blank"}
+* [`서브페이지(회사소개)`](http://ttunmill.dothome.co.kr/logitech/pages/intro.html)
+* [`서브페이지(제품)`](http://ttunmill.dothome.co.kr/logitech/pages/product.html)
+* [`서브페이지(지원)`](http://ttunmill.dothome.co.kr/logitech/pages/support.html)
 
 ---
 ### ⏱작업이력
