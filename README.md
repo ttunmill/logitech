@@ -2,6 +2,7 @@
 <img src="https://github.com/ttunmill/logitech/assets/84768554/7a98083b-6f03-4004-8e07-f8e18ebe78d2">
 
 * (24.07.02 ~ 24.07.09)
+* 총작업기간 8일(56시간)
 * 개인 100%
 ## 🔠사용 언어
 <img src="https://github.com/ttunmill/gabiacns/assets/84768554/45aaaff6-aa00-4209-a23e-13ec83f6031a" width="50" height="50">
