@@ -335,10 +335,10 @@ section div[class $= wrap] {
 .sec06 .sec06_wrap .sec06_content .sec06_g .color_list {display: flex;}
 .sec06 .sec06_wrap .sec06_content .sec06_g .color_list li a {
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    margin-right: 40px;
+    margin-right: 20px;
     border: 1px solid #231F20;
     transition: opacity 0.3s;
 }
