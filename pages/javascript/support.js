@@ -8,6 +8,13 @@ submit.addEventListener("click", (e) => {
     }
 })
 
+search_bar.addEventListener('keydown', function(event) {
+    event.preventDefault();
+    if(search_bar.value == false) {
+        alert("입력을 해주세요.")
+    }
+});
+
 const accordion_tit = document.querySelectorAll(".accordion_g h3");
 const accordion_txt = document.querySelectorAll(".accordion_g .txt_area");
 const accordion_plus = document.querySelectorAll(".accordion_g h3 span");
